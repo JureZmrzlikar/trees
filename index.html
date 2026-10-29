@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tree Leaf Quiz</title>
+  <style>
+    :root { color: #1e2b22; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { background: #eff4ed; margin: 0; min-height: 100svh; padding: clamp(1rem, 4vw, 3rem); }
+    main { background: #fff; border: 1px solid #d8e2d6; border-radius: 1rem; box-shadow: 0 .5rem 2rem #25402a14; margin: auto; max-width: 42rem; padding: clamp(1.25rem, 4vw, 2.5rem); }
+    h1 { font-size: clamp(1.6rem, 5vw, 2.35rem); letter-spacing: -.04em; margin: 0; }
+    #status { color: #526256; min-height: 1.5rem; }
+    img { background: #f5f8f3; border-radius: .75rem; display: block; height: clamp(17rem, 58vw, 29rem); margin: 1rem 0 1.25rem; max-width: 100%; object-fit: contain; width: 100%; }
+    button { background: #fff; border: 1px solid #b9c8b8; border-radius: .6rem; color: inherit; cursor: pointer; display: block; font: inherit; font-style: italic; margin: .65rem 0; min-height: 3.25rem; padding: .75rem 1rem; text-align: left; transition: background .15s, border-color .15s, transform .15s; width: 100%; }
+    button:hover:not(:disabled) { background: #f2f7f0; border-color: #668267; transform: translateY(-1px); }
+    button:focus-visible { outline: 3px solid #7fae80; outline-offset: 2px; }
+    button:disabled { cursor: default; }
+    .wrong { background: #f7d4d6; border-color: #c56166; color: #762024; }
+    .correct { background: #ccebd2; border-color: #559563; color: #123f1d; }
+    #next { background: #315e38; border-color: #315e38; color: #fff; font-style: normal; margin-top: 1.25rem; text-align: center; }
+    #next:hover:not(:disabled) { background: #244b2b; border-color: #244b2b; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Which tree is this?</h1>
+    <p id="status">Loading names...</p>
+    <img id="leaf" alt="Leaf or needle photograph">
+    <div id="answers"></div>
+    <button id="next" hidden type="button">Next image</button>
+  </main>
+
+  <script>
+    const leaf = document.querySelector("#leaf");
+    const status = document.querySelector("#status");
+    const answers = document.querySelector("#answers");
+    const next = document.querySelector("#next");
+    let trees = [];
+    let current;
+
+    const shuffle = (items) => [...items].sort(() => Math.random() - .5);
+    const randomItem = (items) => items[Math.floor(Math.random() * items.length)];
+
+    function imagePaths(tree) {
+      const directory = `${String(tree.number).padStart(2, "0")}_${tree.name.replaceAll(" ", "_")}`;
+      return shuffle([1, 2, 3]).map((number) => `img/${directory}/img${number}.jpg`);
+    }
+
+    function loadFirstImage(paths) {
+      return new Promise((resolve, reject) => {
+        const path = paths.pop();
+        if (!path) {
+          reject();
+          return;
+        }
+        const image = new Image();
+        image.onload = () => resolve(path);
+        image.onerror = () => loadFirstImage(paths).then(resolve, reject);
+        image.src = path;
+      });
+    }
+
+    async function showQuestion() {
+      answers.replaceChildren();
+      next.hidden = true;
+      status.textContent = "Loading image...";
+
+      while (true) {
+        current = randomItem(trees);
+        try {
+          leaf.src = await loadFirstImage(imagePaths(current));
+          break;
+        } catch {
+          // Some TSV entries have no downloaded image; choose another tree.
+        }
+      }
+
+      const choices = shuffle([
+        current,
+        ...shuffle(trees.filter((tree) => tree !== current)).slice(0, 2),
+      ]);
+      for (const tree of choices) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = tree.name;
+        button.addEventListener("click", () => {
+          if (tree === current) {
+            button.classList.add("correct");
+            [...answers.children].forEach((choice) => { choice.disabled = true; });
+            status.textContent = "Correct.";
+            next.hidden = false;
+          } else {
+            button.classList.add("wrong");
+            button.disabled = true;
+            status.textContent = "Try again.";
+          }
+        });
+        answers.append(button);
+      }
+      status.textContent = "Choose the Latin name.";
+    }
+
+    fetch("trees.tsv")
+      .then((response) => {
+        if (!response.ok) throw new Error("Could not load trees.tsv");
+        return response.text();
+      })
+      .then((text) => {
+        trees = text.trim().split("\n").slice(1).map((row) => {
+          const [number, name] = row.split("\t");
+          return { number: Number(number), name };
+        });
+        return showQuestion();
+      })
+      .catch(() => { status.textContent = "Could not load trees.tsv."; });
+
+    next.addEventListener("click", showQuestion);
+  </script>
+</body>
+</html>

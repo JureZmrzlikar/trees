@@ -1,0 +1,169 @@
+Družina: GINKGOACEAE – GINKOVKE (1 vrsta)
+Ginkgo biloba – dvokrpi ginko
+
+Družina: PINACEAE – BOROVKE (10 vrst)
+Abies alba – navadna jelka
+Pseudotsuga menziesii – navadna ameriška duglazija
+Picea abies – navadna smreka
+Picea omorika – omorika, Pančićeva smreka
+Picea pungens – bodeča (srebrna) smreka
+Cedrus atlantica – atlaška cedra
+Larix decidua – evropski macesen
+Pinus sylvestris – rdeči bor
+Pinus nigra – črni bor
+Pinus strobus – zeleni (gladki) bor
+
+Družina: CUPRESSACEAE – CIPRESOVKE (3 vrste)
+Metasequoia glyptostroboides – metasekvoja
+Chamaecyparis lawsoniana – Lawsonova pacipresa
+Juniperus communis – navadni brin
+
+Družina: TAXACEAE – TISOVKE (1 vrsta)
+Taxus baccata – tisa
+
+Družina: MAGNOLIACEAE – MAGNOLIJEVKE (2 vrsti)
+Magnolia sp. – magnolija
+Liriodendron tulipifera – tulipanovec
+
+Družina: RANUNCULACEAE – ZLATIČNICE (1 vrsta)
+Clematis vitalba – navadni srobot
+
+Družina: BERBERIDACEAE – ČEŠMINOVKE (1 vrsta)
+Berberis vulgaris – navadni češmin
+
+
+Družina: HAMAMELIDACEAE – NEPOZEBNIKOVKE (1 vrsta)
+Parrotia persica – parocija
+
+Družina: ALTINGIACEAE – AMBROVČEVKE (1 vrsta)
+Liquidambar styraciflua – ameriški ambrovec
+
+Družina: PLATANACEAE – PLATANOVKE (1 vrsta)
+Platanus x hispanica – javorolistna platana
+
+Družina: FAGACEAE – BUKOVKE (6 vrst)
+Fagus sylvatica – navadna bukev
+Quercus robur – dob
+Quercus petraea – graden
+Quercus cerris – cer
+Quercus rubra – rdeči hrast
+Castanea sativa – pravi kostanj
+
+Družina: BETULACEAE – BREZOVKE (5 vrst)
+Betula pendula – navadna breza
+Alnus glutinosa – črna jelša
+Carpinus betulus – navadni beli gaber
+Ostrya carpinifolia – navadni črni gaber
+Corylus avellana – navadna leska
+
+Družina: ULMACEAE – BRESTOVKE (2 vrsti)
+Ulmus glabra – gorski brest
+Ulmus minor – poljski brest
+
+Družina: CANNABACEAE – KONOPLJEVKE (1 vrsta)
+Celtis australis – navadni koprivovec
+
+Družina: JUGLANDACEAE – OREHOVKE (1 vrsta)
+Juglans regia – navadni oreh
+
+Družina: ROSACEAE – ROŽNICE (14 vrst)
+Prunus avium – divja češnja
+Prunus mahaleb – rešeljika
+Prunus laurocerasus – lovorikovec
+Prunus spinosa – črni trn
+Rubus fruticosus – prava robida
+Rubus caesius – sinjezelena robida
+Rubus idaeus – malinjak, malina
+Rosa canina – navadni šipek
+Malus sylvestris – lesnika
+Pyrus pyraster – drobnica
+Sorbus aucuparia – jerebika
+Sorbus aria – mokovec
+Crataegus laevigata – navadni glog
+Crataegus monogyna – enovratni glog
+
+
+Družina: FABACEAE – METULJNICE (3 vrste)
+Laburnum anagyroides – navadni nagnoj
+Robinia pseudoacacia – robinija
+Wisteria floribunda – japonska glicinija
+
+Družina: ANACARDIACEAE – RUJEVKE (1 vrsta)
+Cotinus coggygria – navadni ruj
+
+Družina: STAPHYLEACEAE – KLOČKOVKE (1 vrsta)
+Staphylea pinnata – navadni kloček
+
+Družina: SAPINDACEAE – SAPINDOVKE (7 vrst)
+Aesculus hippocastanum – navadni divji kostanj
+Acer pseudoplatanus – gorski javor
+Acer platanoides – ostrolistni javor
+Acer campestre – maklen, poljski javor
+Acer negundo – ameriški javor (negundovec)
+Acer saccharinum – srebrni javor
+Acer palmatum – japonski javor
+
+Družina: CELASTRACEAE – TRDOLESKOVKE (2 vrsti)
+Euonymus europaeus – navadna trdoleska
+Euonymus verrucosus – bradavičasta trdoleska
+
+Družina: RHAMNACEAE – KRHLIKOVKE (3 vrste)
+Frangula alnus – navadna krhlika
+Rhamnus cathartica – čistilna kozja češnja
+Rhamnus fallax – kranjska kozja češnja
+
+Družina: VITACEAE – VINIKOVKE (1 vrsta)
+Parthenocissus quinquefolia – peterolistna vinika
+
+Družina: ARALIACEAE – BRŠLJANOVKE (1 vrsta)
+Hedera helix – navadni bršljan
+
+Družina: TAMARICACEAE – TAMARIŠEVKE (1 vrsta)
+Tamarix parviflora – drobnocvetna tamariša
+
+Družina: SALICACEAE – VRBOVKE (11 vrst)
+Salix caprea – iva
+Salix alba – bela vrba
+Salix x rubens – rdečkasta vrba
+Salix viminalis – beka
+Salix purpurea – rdeča vrba
+Salix cinerea – pepelnatosiva vrba
+Salix triandra – mandljevolistna vrba
+Populus nigra – črni topol
+Populus alba – beli topol
+Populus tremula – trepetlika
+Populus x canadensis – kanadski (evroameriški) topol
+
+
+Družina: MALVACEAE – SLEZENOVKE (2 vrsti)
+Tilia cordata – lipovec
+Tilia platyphyllos – lipa
+
+Družina: AQUIFOLIACEAE – BODIKOVKE (1 vrsta)
+Ilex aquifolium – navadna bodika
+
+Družina: CORNACEAE – DRENOVKE (2 vrsti)
+Cornus mas – rumeni dren
+Cornus sanguinea – rdeči dren
+
+Družina: CAPRIFOLIACEAE – KOVAČNIKOVKE (1 vrsta)
+Lonicera xylosteum – puhastolistno kosteničevje
+
+Družina: VIBURNACEAE – BROGOVITOVKE (3 vrste)
+Sambucus nigra – črni bezeg
+Viburnum opulus – brogovita
+Viburnum lantana – dobrovita
+
+Družina: OLEACEAE – OLJKOVKE (3 vrste)
+Fraxinus excelsior – veliki jesen
+Fraxinus ornus – mali jesen
+Ligustrum vulgare – navadna kalina
+
+Družina: BIGNONIACEAE – BIGNONIJEVKE (1 vrsta)
+Catalpa bignonioides – ameriška katalpa (cigarovec)
+
+Družina: APOCYNACEAE – PASJESTRUPOVKE (1 vrsta)
+Vinca minor – navadni zimzelen
+
+Družina: POACEAE – TRAVE (1 vrsta)
+Phyllostachys sp. – bambus
